@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex justify-center md:justify-start items-center space-x-2">
                   <Send className="h-4 w-4 text-gold-400" />
-                  <span><strong>Zelle:</strong> <a href="mailto:ggmb2022@gmail.com" className="underline hover:text-gold-400">ggmb2022@gmail.com</a></span>
+                  <span><strong>Zelle:</strong> <a href="973-517-3382" className="underline hover:text-gold-400">ggmb2022@gmail.com</a></span>
                 </div>
               </div>
             </div>
