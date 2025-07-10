@@ -5,6 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react'], // Prevent pre-bundling
+  },
+  build: {
+    rollupOptions: {
+      external: ['lucide-react'], // Prevent Rollup from trying to bundle it
+    },
   },
 });
