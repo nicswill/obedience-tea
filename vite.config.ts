@@ -3,12 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-  build: {
-    rollupOptions: {
-      external: ['lucide-react'], // 👈 explicitly externalize
-    },
-  },
+  // ✅ REMOVE THIS:
+  // optimizeDeps: {
+  //   exclude: ['lucide-react'],
+  // },
 });
