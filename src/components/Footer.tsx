@@ -1,5 +1,17 @@
 import React from 'react';
-import { Leaf, Mail, Phone, MapPin, Facebook, Instagram, Twitter, DollarSign, CreditCard, Send } from 'lucide-react';
+import {
+  Leaf,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Twitter,
+  DollarSign,
+  CreditCard,
+  Send,
+  BookOpen
+} from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -16,7 +28,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sage-200 mb-6 leading-relaxed">
-              Healing through God's provision. A sacred blend crafted with love, 
+              Healing through God's provision. A sacred blend crafted with love,
               prayer, and the finest herbs to restore your body, mind, and spirit.
             </p>
             <div className="flex justify-center md:justify-start space-x-5">
@@ -72,24 +84,31 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex justify-center md:justify-start items-center space-x-2">
                   <Send className="h-4 w-4 text-gold-400" />
-                  <span><strong>Zelle:</strong> <a href="973-517-3382" className="underline hover:text-gold-400">ggmb2022@gmail.com</a></span>
+                  <span><strong>Zelle:</strong> <a href="tel:9735173382" className="underline hover:text-gold-400">973-517-3382</a></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Prayer/Testimonial Block */}
+        <div className="bg-sage-800 rounded-xl p-6 mt-10 text-center text-sage-100 shadow-inner">
+          <p className="text-lg italic font-medium max-w-2xl mx-auto">
+            “This tea has been a part of my healing journey—mind, body, and spirit. I pray it blesses you as much as it’s blessed me.”
+          </p>
+          <p className="mt-4 text-sm font-semibold text-gold-400">— Dishawn</p>
+        </div>
+
         <hr className="border-sage-600 my-6" />
 
         <div className="md:flex md:items-center md:justify-between text-sm text-center md:text-left">
-          <div className="text-sage-200">
-            <p>&copy; 2024 Obedience Tea by Dishawn. All rights reserved.</p>
-            <p className="mt-1">
-              Made with <span className="text-gold-400">♥</span> and blessed with prayer
-            </p>
+          <div className="text-sage-200 text-center md:text-left">
+            <p className="font-semibold text-base">&copy; 2024 Obedience Tea by Dishawn. All rights reserved.</p>
+            <p className="mt-1 font-medium">Made with <span className="text-gold-400">♥</span> and blessed with prayer</p>
           </div>
-          <div className="mt-4 md:mt-0">
-            <p className="text-sage-200 italic">
+          <div className="mt-4 md:mt-0 text-center md:text-right">
+            <p className="text-sage-200 italic flex items-center justify-center md:justify-end">
+              <BookOpen className="h-4 w-4 mr-2 text-gold-400" />
               "He sent his word, and healed them" - Psalm 107:20
             </p>
           </div>
