@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
               Shop the Collection
             </a>
             <a
-              href="#mystory"
+              href="#story"
               className="border-2 border-sage-400 text-sage-800 hover:border-sage-600 hover:text-sage-900 font-bold py-3 px-6 rounded-full text-center"
             >
               Read My Story
@@ -44,10 +44,13 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-sage-700 text-center">
-        <p>Discover the Story</p>
+      <a
+        href="#story"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-sage-700 text-center hover:text-gold-600 transition"
+      >
+        <p className="underline">Discover the Story</p>
         <span className="animate-bounce mt-1 text-gold-500 text-xl">↓</span>
-      </div>
+      </a>
     </section>
   );
 };
