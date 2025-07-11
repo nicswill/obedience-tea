@@ -12,6 +12,7 @@ import {
   Send,
   BookOpen
 } from 'lucide-react';
+import TikTokIcon from '../assets/tiktok-icon.jpg'; // 👈 Add this import
 
 const Footer: React.FC = () => {
   return (
@@ -32,14 +33,14 @@ const Footer: React.FC = () => {
               prayer, and the finest herbs to restore your body, mind, and spirit.
             </p>
             <div className="flex justify-center md:justify-start space-x-5">
-              <a href="#" className="text-sage-200 hover:text-gold-400 transition-colors">
+              <a href="https://www.facebook.com/dishawn.evans?rdid=K0dcSW1rY1vmXOk5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16pxb289NB%2F#" target="_blank" rel="noopener noreferrer" className="text-sage-200 hover:text-gold-400 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-sage-200 hover:text-gold-400 transition-colors">
+              <a href="https://www.instagram.com/superfly_d?igsh=cG02N3lxNWljajA5&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-sage-200 hover:text-gold-400 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-sage-200 hover:text-gold-400 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://www.tiktok.com/@shawn9365?_t=ZT-8xvXTseMX7n&_r=1" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+                <img src={TikTokIcon} alt="TikTok" className="w-5 h-5 rounded" />
               </a>
             </div>
           </div>
